@@ -1,0 +1,95 @@
+body .nav{
+    background-color: black;
+}
+
+.container {
+    border: solid black;  
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.3fr 1.5fr 3.1fr 1.5fr;
+    grid-auto-rows: 3fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-items: stretch;
+    grid-template-areas:
+      "nav"
+      "Featured-Shows"
+      "read-more"
+      "Links";
+  }
+  
+nav{ 
+    display:flex;
+    gap: 50px;
+} 
+
+
+
+
+.nav {
+    display: grid;
+    justify-items: center;
+    align-items: baseline;
+    grid-template-columns: 0.5fr 3fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: column;
+    grid-template-areas:
+    "..";
+    grid-area: nav;
+}
+
+.centered{
+    font-size: 1000%;
+    color: aliceblue;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+
+}
+
+.Featured-Shows { 
+    border: solid black;
+    grid-area: Featured-Shows; 
+    display:flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.read-more {
+    border: solid black;  
+    display: grid;
+    grid-template-columns: 0.7fr 1.8fr 0.5fr;
+    grid-template-rows: 0.2fr 0.5fr 1.3fr 1.3fr 1.4fr ;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        " . ."
+        "image_1 . ."
+        "image_2 . ."
+        "image_3 . ."
+        "image_4 . ."
+        ". . .";
+    grid-area: read-more;
+}
+
+.image-1{
+    justify-content: ;
+    grid-column-start: 1;
+}
+
+.Links {  
+    border: solid black;
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr 1fr 0.6fr;
+    grid-template-rows: 0.5fr 2.1fr 0.4fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        ". . . . ."
+        ". . . . ."
+        ". . . . .";
+    grid-area: Links;
+}
+  
